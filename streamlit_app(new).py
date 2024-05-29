@@ -9,7 +9,7 @@ import tempfile
 # path_to_file = "prediksi_harga_rumah_smg.sav"  
 # model = pickle.load(open(path_to_file, 'rb'))
 
-filename = 'prediksi_harga_rumah_semarang.zip'
+filename = 'prediksi_harga_rumah_smg.zip'
 with zipfile.ZipFile(filename, 'r') as zip_ref:
     # List all the contents of the zip file
     file_list = zip_ref.namelist()
