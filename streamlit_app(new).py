@@ -21,8 +21,8 @@ with zipfile.ZipFile(filename, 'r') as zip_ref:
         # Load pickle files from the extracted contents
         for file_name in file_list:
             file_path = os.path.join(temp_dir, file_name)
-            with open(file_path, 'rb') as f:
-                model = pickle.load(f)
+            # with open(file_path, 'rb') as f:
+            model = joblib.load(file_path)
 
 # Membuat sidebar
 test = st.sidebar.radio("Menu", ["Beranda", "Data","Labelling", "Prediksi", "Kontak"])
