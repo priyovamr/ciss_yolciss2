@@ -1,4 +1,4 @@
-numpy==1.26.4
+numpy==1.26.2
 pandas
 cython
 scikit-learn==1.2.2
